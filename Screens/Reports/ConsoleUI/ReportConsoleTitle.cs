@@ -1,6 +1,6 @@
 using System;
 
-namespace GYM_System.Helper
+namespace GYM_System.Screens.Reports
 {
     public static class ReportConsoleTitle
     {
