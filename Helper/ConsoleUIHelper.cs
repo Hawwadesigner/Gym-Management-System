@@ -8,7 +8,7 @@ namespace GYM_System.Helper
         public static void ShowMenu(string title, List<string>options)
         {
             Console.Clear();
-            int width = 42;
+            int width = 52;
 
             // Header
             Console.WriteLine("╔══════════════════════════════════════════╗");
