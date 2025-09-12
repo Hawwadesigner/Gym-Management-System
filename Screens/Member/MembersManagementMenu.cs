@@ -14,7 +14,9 @@ namespace GYM_System.Screens.Member
                 {
                     "Add Member",
                     "View Members",
+                    "AssignTrainerToMemberScreen",
                     "Update Member",
+                    "Find Member (ID/Phone)",
                     "Delete Member",
                     "Main Menu"
                 });
@@ -23,11 +25,13 @@ namespace GYM_System.Screens.Member
 
                 switch(options)
                 {
-                    case "1": AddMemberScreen.Show(memberService); break;
-                    case "2": ViewMemberScreen.Show(memberService.GetAllLazy()); break;
-                    case "3": UpdateMemberScreen.Show(memberService); break;
-                    case "4": DeleteMemberScreen.Show(memberService); break;
-                    case "5": return;
+                   case "1": AddMemberScreen.Show(memberService); break;
+                   case "2": ViewMemberScreen.Show(memberService.GetAllLazy());break;
+                   case "3": AssignTrainerToMemberScreen.Show(, memberService);break;
+                   case "4": UpdateMemberScreen.Show(memberService); break;
+                   case "5": FindMemberScreen.Show(memberService);break;
+                   case "6": DeleteMemberScreen.Show(memberService); break;
+                   case "7": return;
                 }
                 Console.WriteLine("\n\nPress any key to return to Member Menu screen");
                 Console.ReadKey();
