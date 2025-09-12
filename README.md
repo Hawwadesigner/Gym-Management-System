@@ -102,7 +102,8 @@ This project simulates a real-world gym system with CRUD operations, event-drive
 │ └─ Reports/
 │   ├─ ReportMenuScreen.cs
 │   ├─ ConsoleUI/
-│   │ └─ ReportConsoleRenderers.cs
+│   │ ├─ ReportConsoleRenderers.cs
+│   │ └─ ReportConsoleTitle.cs
 │   ├─ Core/
 │   │ ├─ ReportsCatalog.cs
 │   │ └─ ReportDifinationModel.cs
