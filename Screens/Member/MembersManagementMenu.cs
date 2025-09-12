@@ -21,7 +21,7 @@ namespace GYM_System.Screens.Member
                     "Main Menu"
                 });
 
-                var options = InputHelper.ReadIntNumberBetween(1, 5).ToString();
+                var options = InputHelper.ReadIntNumberBetween(1, 7).ToString();
 
                 switch(options)
                 {
