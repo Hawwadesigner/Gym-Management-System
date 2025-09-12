@@ -27,7 +27,7 @@ namespace GYM_System.Screens.Member
                 {
                    case "1": AddMemberScreen.Show(memberService); break;
                    case "2": ViewMemberScreen.Show(memberService.GetAllLazy());break;
-                   case "3": AssignTrainerToMemberScreen.Show(, memberService);break;
+                   case "3": AssignTrainerToMemberScreen.Show(trainerService.GetAllLazy(), memberService);break;
                    case "4": UpdateMemberScreen.Show(memberService); break;
                    case "5": FindMemberScreen.Show(memberService);break;
                    case "6": DeleteMemberScreen.Show(memberService); break;
