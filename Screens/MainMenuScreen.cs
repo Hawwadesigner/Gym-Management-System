@@ -38,7 +38,7 @@ namespace GYM_System.Screens
 
                 switch (options)
                 {
-                    case "1": MembersManagementMenu.Show(memberService); break;
+                    case "1": MembersManagementMenu.Show(memberService,, trainerService); break;
                     case "2": AttendanceManagementMenu.Show(attendance, memberService); break;
                     case "3": SubscriptionsManagementMenu.Show(subscriptionChecker,subscriptionService, memberService); break;
                     case "4": TrainersManagementMenu.Show(trainerService); break;
