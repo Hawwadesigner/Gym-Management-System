@@ -8,14 +8,14 @@ namespace GYM_System.Screens.Member
 {
     public static class AssignTrainerToMemberScreen
     {
-        private static void ShowTrainers(List<TrainerModel> trainers)
+        private static void ShowTrainers(IEnumerable<TrainerModel> trainers)
         {
             Console.Clear();
             Console.WriteLine("┌──┬───────────────────────┬──────────────────────┐");
             Console.WriteLine("│ID│ Trainer Name          │ Specialization       │");
             Console.WriteLine("├──┼───────────────────────┼──────────────────────┤");
 
-            if (trainers.Count == 0)
+            if (!trainers.Any())
             {
                 Console.WriteLine("│           No Trainers found!                   │");
                 Console.WriteLine("└──┴───────────────────────┴──────────────────────┘");
@@ -31,11 +31,11 @@ namespace GYM_System.Screens.Member
             Console.WriteLine("└──┴───────────────────────┴──────────────────────┘");
         }
 
-        public static void Show(List<TrainerModel> trainers, MemberService memberService)
+        public static void Show(IEnumerable<TrainerModel> trainers, MemberService memberService)
         {
             ShowTrainers(trainers);
 
-            var totalTrainers = trainers.Count;
+            var totalTrainers = trainers.Count();
 
             // Trainer Id
             Console.WriteLine("\n\n-> Select Trainer ID to assign with: ");
