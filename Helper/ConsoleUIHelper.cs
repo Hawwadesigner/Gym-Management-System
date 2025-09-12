@@ -12,7 +12,7 @@ namespace GYM_System.Helper
 
             // Header
             Console.WriteLine("╔══════════════════════════════════════════╗");
-            Console.WriteLine($"║ {title.PadLeft((width+ title.Length)/2).PadRight(width)} ║");
+            Console.WriteLine($"║{title.PadLeft((width+ title.Length)/2).PadRight(width)}║");
             Console.WriteLine("╠══════════════════════════════════════════╣");
 
             // Options
