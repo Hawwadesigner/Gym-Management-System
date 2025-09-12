@@ -11,9 +11,9 @@ namespace GYM_System.Helper
             int width = 52;
 
             // Header
-            Console.WriteLine("╔══════════════════════════════════════════╗");
+            Console.WriteLine("╔════════════════════════════════════════════════════╗");
             Console.WriteLine($"║{title.PadLeft((width+ title.Length)/2).PadRight(width)}║");
-            Console.WriteLine("╠══════════════════════════════════════════╣");
+            Console.WriteLine("╠════════════════════════════════════════════════════╣");
 
             // Options
             for (int i = 0; i < options.Count; i++)
@@ -25,7 +25,7 @@ namespace GYM_System.Helper
             }
 
             // Footer
-            Console.WriteLine("╚══════════════════════════════════════════╝");
+            Console.WriteLine("╚════════════════════════════════════════════════════╝");
             Console.Write("\n-> Select an option: ");
         }
     }
