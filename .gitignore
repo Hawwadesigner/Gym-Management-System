@@ -1,0 +1,37 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Local DB / DB files
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Publish
+*.Publish.xml
+*.azurePubxml
+
+# Resharper
+_ReSharper*/
+
+# Logs
+*.log
+
+# Secret / local settings
+secrets.json
+appsettings.*.Secret.json
+
+# OS files
+.DS_Store
+Thumbs.db
