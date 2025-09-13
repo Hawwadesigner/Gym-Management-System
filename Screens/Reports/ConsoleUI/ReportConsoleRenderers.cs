@@ -25,7 +25,7 @@ namespace GYM_System.Screens.Reports
             foreach (var t in data) // for trainer
             {
                 Console.WriteLine($"Trainer Name:  {t.FullName}"); // header
-                Console.WriteLine(new string('-', 35));
+                Console.WriteLine(new string('-', 50));
 
                 if (t.Members != null && t.Members.Any()) // data
                 {
@@ -35,32 +35,32 @@ namespace GYM_System.Screens.Reports
                 else
                     Console.WriteLine("\nNo Members");
 
-                Console.WriteLine(new string('-', 35)); // footer
+                Console.WriteLine(new string('-', 50)); // footer
             }
         }
         
         public static void RenderRevenueInSpecificMonthConsole(Dictionary<string, decimal> data)
         {
-            Console.WriteLine("{0,15} | {1,15}", "Service Level", "Revenue"); // header
-            Console.WriteLine(new string('-', 38));
+            Console.WriteLine("{0,-25} | {1,20}", "Service Level", "Revenue"); // header
+            Console.WriteLine(new string('-', 50));
 
             foreach (var r in data)
             {
-                Console.WriteLine("{0,15} | {1,15:C2}", r.Key, r.Value); // data
+                Console.WriteLine("{0,-25} | {1,20:C2}", r.Key, r.Value); // data
             }
-            Console.WriteLine(new string('-', 35)); // footer
+            Console.WriteLine(new string('-', 50)); // footer
         }
         
         public static void RenderMostActiveAttendanceCommittedMembersConsole(IEnumerable<AttendanceReportModel> data)
         {
-            Console.WriteLine("{0,30} | {1,10}", "Member Name", "Attendance"); // header
-            Console.WriteLine(new string('-', 45));
+            Console.WriteLine("{0,-30} | {1,15}", "Member Name", "Attendance"); // header
+            Console.WriteLine(new string('-', 50));
 
             foreach (var m in data)
             {
-                Console.WriteLine("{0,30} | {1,10}", m.MemberName, m.AttendanceCount);// data
+                Console.WriteLine("{0,-30} | {1,15}", m.MemberName, m.AttendanceCount);// data
             }
-            Console.WriteLine(new string('-', 45)); // footer
+            Console.WriteLine(new string('-', 50)); // footer
         }
     }
 
