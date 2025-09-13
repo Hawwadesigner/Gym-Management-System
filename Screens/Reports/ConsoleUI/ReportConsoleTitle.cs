@@ -7,11 +7,11 @@ namespace GYM_System.Screens.Reports
         public static void PrintTitle(string title)
         {
             Console.Clear();
-            Console.WriteLine("==========================================");
-            int width = 42;
+            Console.WriteLine("==================================================");
+            int width = 50;
             int padding = (width - title.Length) / 2;
             Console.WriteLine(new string(' ', padding) + title);
-            Console.WriteLine("==========================================");
+            Console.WriteLine("==================================================");
         }
     }
 }
